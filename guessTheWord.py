@@ -91,7 +91,9 @@ if __name__ == "__main__":
             if guess["transcription"]:
                 break
             if not guess["success"]:
+                print(guess)
                 break
+            print(guess)
             print("I didn't catch that. What did you say?\n")
 
         # if there was an error, stop the game

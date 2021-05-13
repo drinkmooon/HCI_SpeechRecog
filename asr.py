@@ -1,6 +1,7 @@
 from PyQt5 import QtWidgets, QtGui, QtCore, uic
 
 from asrInterface import Ui_MainWindow
+from interface import MyMainWindow
 import sys
 
 import speech_recognition as sr
@@ -11,8 +12,13 @@ class myWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(myWindow, self).__init__()
         self.myCommand = " "
-        self.ui = Ui_MainWindow()
+        self.ui = MyMainWindow()
         self.ui.setupUi(self)
+    # def __init__(self):
+    #     super(myWindow, self).__init__()
+    #     self.myCommand = " "
+    #     self.ui = Ui_MainWindow()
+    #     self.ui.setupUi(self)
 
 
 app = QtWidgets.QApplication([])
